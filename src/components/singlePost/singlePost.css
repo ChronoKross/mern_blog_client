@@ -1,0 +1,100 @@
+.singlePost {
+  flex: 9;
+}
+
+.singlePostWrapper {
+  padding: 20px;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.singlePost--image {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.singlePost--title {
+  text-align: center;
+  margin: 10px;
+  font-family: "Lora", serif;
+  font-size: 28px;
+}
+
+.singlePost--title-input {
+  margin: 10px;
+  font-family: "Lora", serif;
+  font-size: 28px;
+  text-align: center;
+  color: gray;
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+
+.singlePost--title-input:focus {
+  outline: none;
+}
+
+.singlePost--edit {
+  float: right;
+  font-size: 16px;
+}
+
+.singlePost--icon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.singlePost--icon:first-child {
+  color: teal;
+}
+
+.singlePost--icon:last-child {
+  color: tomato;
+}
+
+.singlePost--info {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-family: "Varela Round", sans-serif;
+  color: #b39656;
+}
+
+.singlePost--description {
+  color: #666;
+  font-size: 1.125rem;
+  line-height: 25px;
+}
+
+.singlePost--description::first-letter {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.singlePost--description-input{
+    border: none;
+    color: #666;
+  font-size: 1.125rem;
+  line-height: 25px;
+}
+
+.singlePost--description-input:focus{
+    outline: none;
+}
+
+.singlePost--button{
+    border:none;
+    background-color: teal;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 25px;
+}
