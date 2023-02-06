@@ -16,7 +16,9 @@ export default function SinglePost() {
 
   useEffect(() => {
     const getPost = async () => {
-      const res = await axios.get("/posts/" + path);
+      const res = await axios.get(
+        "https://thedailyescape-api.onrender.com/posts/" + path
+      );
       setPost(res.data);
       setTitle(res.data.title);
       setDescription(res.data.description);
