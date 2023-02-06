@@ -37,7 +37,7 @@ export default function Settings() {
     }
     try {
       const res = await axios.put(
-        "https://thedailyescape-api.onrender.com/users/" + user._id,
+        "https://thedailyescape-api.onrender.com/api/users/" + user._id,
         updatedUser
       );
       setSuccess(true);

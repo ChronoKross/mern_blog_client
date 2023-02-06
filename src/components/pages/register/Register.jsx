@@ -14,7 +14,7 @@ export default function Register() {
     setError(false);
     try {
       const res = await axios.post(
-        "https://thedailyescape-api.onrender.com/auth/register",
+        "https://thedailyescape-api.onrender.com/api/auth/register",
         {
           username,
           email,

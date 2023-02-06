@@ -28,11 +28,11 @@ export default function Write() {
     }
     try {
       const res = await axios.post(
-        "https://thedailyescape-api.onrender.com/posts",
+        "https://thedailyescape-api.onrender.com/api/posts",
         newPost
       );
       window.location.replace(
-        "https://thedailyescape-api.onrender.com/post/" + res.data._id
+        "https://thedailyescape-api.onrender.com/api/post/" + res.data._id
       );
     } catch (err) {}
   };

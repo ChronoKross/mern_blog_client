@@ -14,7 +14,7 @@ export default function Login() {
     dispatch({ type: "LOGIN_START" });
     try {
       const res = await axios.post(
-        "https://thedailyescape-api.onrender.com/auth/login",
+        "https://thedailyescape-api.onrender.com/api/auth/login",
         {
           username: userRef.current.value,
           password: passwordRef.current.value,
