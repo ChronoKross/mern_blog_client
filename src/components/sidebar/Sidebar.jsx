@@ -9,7 +9,9 @@ export default function Sidebar() {
 
   useEffect(() => {
     const getCategory = async () => {
-      const res = await axios.get("/categories")
+      const res = await axios.get(
+        "https://thedailyescape-api.onrender.com/api/categories"
+      );
       setCategories(res.data);
     }
     getCategory()
