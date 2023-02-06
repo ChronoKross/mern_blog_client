@@ -27,8 +27,13 @@ export default function Write() {
       } catch (err) {}
     }
     try {
-      const res = await axios.post("/posts", newPost);
-      window.location.replace("/post/" + res.data._id);
+      const res = await axios.post(
+        "https://thedailyescape-api.onrender.com/posts",
+        newPost
+      );
+      window.location.replace(
+        "https://thedailyescape-api.onrender.com/post/" + res.data._id
+      );
     } catch (err) {}
   };
 
