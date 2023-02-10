@@ -5,7 +5,7 @@ import { Context } from "../../context/Context";
 
 export default function NavBar() {
   const { user, dispatch } = useContext(Context);
-  const PF = "https://thedailyescape-api.onrender.com/images";
+  const PF = "https://thedailyescape-api.onrender.com/images/";
 
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
