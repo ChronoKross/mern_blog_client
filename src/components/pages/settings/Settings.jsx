@@ -30,7 +30,7 @@ export default function Settings() {
       data.append("file", file);
       updatedUser.profilePicture = filename;
       try {
-        await axios.post("https://thedailyescape-api.onrender.com/api/upload", data);
+        await axios.post("https://thedailyescape-api.onrender.com/api/upload/", data);
       } catch (err) {
         console.log(err);
       }
