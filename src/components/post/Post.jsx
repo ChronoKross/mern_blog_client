@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Post({ post }) {
   //pf= public folder for static files/images/etc.
-  const PF = "http://localhost:5000/images/";
+  const PF = "https://thedailyescape-api.onrender.com/images/";
   return (
     <div className="post">
       {post.photo && (
